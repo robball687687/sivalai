@@ -21,6 +21,7 @@ namespace SivalaiDartmouth.Controllers
         public IActionResult Index()
         {
             RestaurantItems test = m_InventoryRetrievalService.getInventory();
+            ViewData["Menu"] = test;
             //ViewData["Menu"] = m_InventoryRetrievalService.getInventory();
 
             //var test = ViewData["Menu"];

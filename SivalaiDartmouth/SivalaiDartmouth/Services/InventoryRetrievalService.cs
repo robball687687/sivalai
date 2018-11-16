@@ -31,16 +31,27 @@ namespace SivalaiDartmouth.Services
                 // ListCatalog
                 ListCatalogResponse result = apiInstance.ListCatalog(null, null);
                 IDictionary<string, RestaurantItem> items = new Dictionary<string, RestaurantItem>();
-                
-                foreach (var test in result.Objects)
+                IDictionary<string, RestaurantCategory> categorys = new Dictionary<string, RestaurantCategory>();
+
+                foreach (var restObj in result.Objects)
                 {
-                    switch(test.Type)
+                    switch(restObj.Type)
                     {
                         case Square.Connect.Model.CatalogObject.TypeEnum.ITEM:
-                            if(test.ItemData.CategoryId== "CC523COHULAO3I5DAZRPCNKB")
+                            if(restObj.ItemData.CategoryId== "CC523COHULAO3I5DAZRPCNKB")
                             {
-                                items.Add(test.ItemData.Name, new RestaurantItem() { ItemName = test.ItemData.Name });
+                                items.Add(restObj.ItemData.Name, new RestaurantItem() {
+                                    ItemName = restObj.ItemData.Name,
+                                    ItemDescription = restObj.ItemData.Description,
+                                    ItemPrice = "$12"
+                                });
                             }                            
+                            break;
+                        case Square.Connect.Model.CatalogObject.TypeEnum.CATEGORY:
+                            categorys.Add(restObj.CategoryData.Name, new RestaurantCategory()
+                            {
+                                CategoryName = restObj.CategoryData.Name
+                            });
                             break;
                         default:
                             break;
@@ -48,8 +59,8 @@ namespace SivalaiDartmouth.Services
                 }
 
                 retMenu.items = items;                    
-                //var test2 = items;
-                //var test1 = result;
+                var test2 = categorys;
+                var test1 = test2;
                 
                 //Debug.WriteLine(result);
             }
