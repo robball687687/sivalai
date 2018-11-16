@@ -1,0 +1,251 @@
+﻿body {
+    /*padding-top: 50px;*/
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.navbar-nav {
+    color: black;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+
+.transparent {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0%, rgba(0,0,0,0.00)),color-stop( 100%, rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: black;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    height:auto;
+    width:auto;
+    background-image: url("../images/banner1.jpg");
+    min-height: 400px;
+}
+
+.bgimg-2 {
+    background-image: url("../images/banner2.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("../images/banner3.jpg");
+    min-height: 400px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+    .carousel-caption {
+        display: none;
+    }
+}
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0px;
+    font-size: 16px;
+    color: #6e726e;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #121312;
+    margin: 0px 0px 15px 0px;
+    font-weight: 400;
+    font-family: 'Zilla Slab', serif;
+}
+
+h1 {
+    font-size: 38px;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 42px;
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+p {
+    margin: 0 0 24px;
+    line-height: 1.6;
+}
+
+    p:last-child {
+        margin: 0px;
+    }
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #121312;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+    a:focus, a:hover {
+        text-decoration: none;
+        color: #1aa644;
+    }
+
+
+
+
+
+
+
+.menu-block {
+    margin-bottom: 30px;
+}
+
+.menu-title {
+    border-bottom: 3px solid #e0e6e3;
+    margin-bottom: 36px;
+    padding-bottom: 10px;
+}
+
+.menu-content {
+    border-bottom: 1px solid #e0e6e3;
+    margin-bottom: 30px;
+}
+
+.dish-img {
+}
+
+.dish-content {
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+.dish-meta {
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    width: 210px;
+    line-height: 1.7;
+}
+
+.dish-title {
+    margin-bottom: 6px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+}
+
+.dish-price {
+    position: absolute;
+    right: 16px;
+    top: 0px;
+    font-size: 26px;
+    color: #e03c23;
+    font-weight: 500;
+    font-family: 'Zilla Slab', serif;
+}
+
+.well-block .dish-meta {
+    width: 100%;
+}
+
+.well-block .dish-price {
+    font-size: 26px;
+    color: #e03c23;
+    font-weight: 500;
+    font-family: 'Zilla Slab', serif;
+    position: inherit;
+}

@@ -1,0 +1,11 @@
+c:\users\rball\documents\visual studio 2017\Projects\SivalaiDartmouth\SivalaiDartmouth\bin\Debug\netcoreapp2.0\SivalaiDartmouth.deps.json
+c:\users\rball\documents\visual studio 2017\Projects\SivalaiDartmouth\SivalaiDartmouth\bin\Debug\netcoreapp2.0\SivalaiDartmouth.runtimeconfig.json
+c:\users\rball\documents\visual studio 2017\Projects\SivalaiDartmouth\SivalaiDartmouth\bin\Debug\netcoreapp2.0\SivalaiDartmouth.runtimeconfig.dev.json
+c:\users\rball\documents\visual studio 2017\Projects\SivalaiDartmouth\SivalaiDartmouth\bin\Debug\netcoreapp2.0\SivalaiDartmouth.dll
+c:\users\rball\documents\visual studio 2017\Projects\SivalaiDartmouth\SivalaiDartmouth\obj\Debug\netcoreapp2.0\SivalaiDartmouth.csproj.CoreCompileInputs.cache
+c:\users\rball\documents\visual studio 2017\Projects\SivalaiDartmouth\SivalaiDartmouth\obj\Debug\netcoreapp2.0\SivalaiDartmouth.AssemblyInfoInputs.cache
+c:\users\rball\documents\visual studio 2017\Projects\SivalaiDartmouth\SivalaiDartmouth\obj\Debug\netcoreapp2.0\SivalaiDartmouth.AssemblyInfo.cs
+c:\users\rball\documents\visual studio 2017\Projects\SivalaiDartmouth\SivalaiDartmouth\obj\Debug\netcoreapp2.0\SivalaiDartmouth.csprojAssemblyReference.cache
+c:\users\rball\documents\visual studio 2017\Projects\SivalaiDartmouth\SivalaiDartmouth\bin\Debug\netcoreapp2.0\SivalaiDartmouth.pdb
+c:\users\rball\documents\visual studio 2017\Projects\SivalaiDartmouth\SivalaiDartmouth\obj\Debug\netcoreapp2.0\SivalaiDartmouth.dll
+c:\users\rball\documents\visual studio 2017\Projects\SivalaiDartmouth\SivalaiDartmouth\obj\Debug\netcoreapp2.0\SivalaiDartmouth.pdb
