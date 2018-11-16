@@ -17,12 +17,12 @@ namespace SivalaiDartmouth.Services
 
         }
 
-        public RestaurantItems getInventory()
+        public RestaurantFullMenu getInventory()
         {
-            RestaurantItems retMenu = new RestaurantItems();
+            RestaurantFullMenu retMenu = new RestaurantFullMenu();
             
-
             Configuration.Default.AccessToken = "sq0atp-ck43ZyjwVgVq8ZnmW98QNw";
+            int categorynumber = 0;
 
             var apiInstance = new CatalogApi();
             
@@ -48,9 +48,11 @@ namespace SivalaiDartmouth.Services
                             }                            
                             break;
                         case Square.Connect.Model.CatalogObject.TypeEnum.CATEGORY:
+                            categorynumber = categorynumber + 1;
                             categorys.Add(restObj.CategoryData.Name, new RestaurantCategory()
                             {
-                                CategoryName = restObj.CategoryData.Name
+                                CategoryName = restObj.CategoryData.Name,
+                                CategoryNumber = categorynumber.ToString()
                             });
                             break;
                         default:
@@ -58,11 +60,8 @@ namespace SivalaiDartmouth.Services
                     }
                 }
 
-                retMenu.items = items;                    
-                var test2 = categorys;
-                var test1 = test2;
-                
-                //Debug.WriteLine(result);
+                retMenu.items = items;
+                retMenu.categorys = categorys;
             }
             catch (Exception e)
             {

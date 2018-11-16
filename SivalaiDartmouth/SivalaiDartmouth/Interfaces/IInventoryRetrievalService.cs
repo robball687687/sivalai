@@ -8,6 +8,6 @@ namespace SivalaiDartmouth.Interfaces
 {
     public interface IInventoryRetrievalService
     {
-        RestaurantItems getInventory();
+        RestaurantFullMenu getInventory();
     }
 }

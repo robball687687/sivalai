@@ -8,5 +8,6 @@ namespace SivalaiDartmouth.Models
     public class RestaurantCategory
     {
         public string CategoryName { get; set; }
+        public string CategoryNumber { get; set; }
     }
 }

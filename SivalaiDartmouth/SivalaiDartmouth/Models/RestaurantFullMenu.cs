@@ -7,7 +7,7 @@ namespace SivalaiDartmouth.Models
 {
     public class RestaurantFullMenu
     {
-        IDictionary<string, RestaurantItem> items = new Dictionary<string, RestaurantItem>();
-        IDictionary<string, RestaurantCategory> categorys = new Dictionary<string, RestaurantCategory>();
+        public IDictionary<string, RestaurantItem> items { get; set; }
+        public IDictionary<string, RestaurantCategory> categorys { get; set; }
     }
 }
